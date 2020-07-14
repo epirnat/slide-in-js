@@ -58,7 +58,15 @@
       };
     }
 
+    const sliderImages = document.querySelectorAll('.slide-in');
    
+    function checkSlide(e) {
+      console.log(e);
+    }
+
+    window.addEventListener('scroll', debounce(checkSlide));
+
+
   </script>
 
   <style>
@@ -81,7 +89,7 @@
     h1 {
       margin-top: 0;
     }
-    
+
     .site-wrap {
       max-width: 700px;
       margin: 100px auto;
